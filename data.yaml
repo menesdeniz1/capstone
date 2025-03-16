@@ -1,0 +1,12 @@
+path: C:\Users\Kutsa\Desktop\dataset
+train: train/images
+val: valid/images
+test: test/images
+
+names:
+  0: blue
+  1: brown
+  2: green
+  3: orange
+  4: red
+  5: yellow
