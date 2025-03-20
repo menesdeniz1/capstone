@@ -1,4 +1,4 @@
-path: C:\Users\Kutsa\Desktop\capstone4992
+path: C:\Users\Kutsa\Desktop\dataset\data
 train: train/images
 val: valid/images
 test: test/images
@@ -10,3 +10,4 @@ names:
   3: orange
   4: red
   5: yellow
+  6: non-mm
