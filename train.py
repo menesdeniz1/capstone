@@ -7,7 +7,7 @@ def train_yolov8():
     # Train the model
     results = model.train(
         data='data.yaml',    # Path to corrected data.yaml
-        epochs=5,          # Increased to 200 epochs for better generalization
+        epochs=10,          # Increased to 200 epochs for better generalization
         batch=8,             # Lowered batch size to prevent memory issues
         imgsz=640,           # Input image size
         patience=5,          # Early stopping after 5 epochs of no improvement
