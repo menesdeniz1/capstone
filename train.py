@@ -7,7 +7,7 @@ def train_yolov8():
     # Train the model
     results = model.train(
         data='data.yaml',    # Path to corrected data.yaml
-        epochs=200,          # Increased to 200 epochs for better generalization
+        epochs=5,          # Increased to 200 epochs for better generalization
         batch=8,             # Lowered batch size to prevent memory issues
         imgsz=640,           # Input image size
         patience=5,          # Early stopping after 5 epochs of no improvement
@@ -30,7 +30,6 @@ def train_yolov8():
         close_mosaic=10,     # Close mosaic after 10 epochs for stability
         cache=True,          # Cache dataset for faster training
         workers=4,           # Use multi-threading for faster loading
-        auto_balance=True,   # Balance class frequencies
         iou=0.4,             # Lower IOU threshold for better recall
         conf=0.55            # Confidence threshold based on F1 curve
     )
